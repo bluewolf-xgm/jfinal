@@ -131,9 +131,14 @@ public class BlogInterceptor implements Interceptor {
 - JFinal 官方网站  [https://jfinal.com](https://jfinal.com/) 
 - 扫码关注官方微信公众号，第一时间尊享最新动向  
 
-![JFinal](https://jfinal.com/assets/img/jfinal_weixin_service_qr_code_150.jpg) 
+![JFinal](https://jfinal.com/assets/img/jfinal_weixin_service_qr_code_150.jpg) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fbluewolf-xgm%2Fjfinal.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fbluewolf-xgm%2Fjfinal?ref=badge_shield)
 
 
 
 
 
+
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fbluewolf-xgm%2Fjfinal.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fbluewolf-xgm%2Fjfinal?ref=badge_large)
