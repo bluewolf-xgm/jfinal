@@ -58,8 +58,8 @@
 	</repositories>
 
 	<!--
-		所有 dependency 都仅仅是可选项，仅当实际用到第三方时才需要引入
-		注意在 copy 引入下面的依赖时，要去掉 <scope>provided</scope> 才能生效
+		������ dependency ���������������������������������������������������������������������
+		��������� copy ������������������������������������ <scope>provided</scope> ������������
 	 -->
 	<dependencies>
 		<dependency>
@@ -69,7 +69,7 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- slf4j 日志，配置方法：me.setLogFactory(new Slf4jLogFactory()) -->
+		<!-- slf4j ������������������������me.setLogFactory(new Slf4jLogFactory()) -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
@@ -77,7 +77,7 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- jetty-server 仅用于开发，现已被 jfinal-undertow 项目所取代 -->
+		<!-- jetty-server ��������������������������� jfinal-undertow ��������������� -->
 		<dependency>
 			<groupId>com.jfinal</groupId>
 			<artifactId>jetty-server</artifactId>
@@ -90,7 +90,7 @@
 			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency -->
-		<!-- jetty-server 开发时支持 JSP -->
+		<!-- jetty-server ��������������� JSP -->
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-jsp</artifactId>
@@ -98,7 +98,7 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- cos 文件上传 -->
+		<!-- cos ������������ -->
 		<dependency>
 			<groupId>com.jfinal</groupId>
 			<artifactId>cos</artifactId>
@@ -106,10 +106,10 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- druid 数据源连接池
-		     注意：从 druid 1.2.5 版本开始，DruidStatViewHandler 中无法使用父类中的 username
-		          与 password，所以升级到比 1.2.4 更高版本时，druid 监控将无法无法通过 jfinal
-		          扩展的 DruidStatViewHandler 使用。可以通过 druid 内置配置方式使用
+		<!-- druid ������������������
+		     ������������ druid 1.2.5 ���������������DruidStatViewHandler ��������������������������� username
+		          ��� password��������������������� 1.2.4 ������������������druid ��������������������������� jfinal
+		          ��������� DruidStatViewHandler ��������������������� druid ������������������������
 		 -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
@@ -118,15 +118,15 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- HikariCP 数据源连接池 -->
+		<!-- HikariCP ������������������ -->
 		<dependency>
 			<groupId>com.zaxxer</groupId>
 			<artifactId>HikariCP</artifactId>
-			<version>4.0.3</version><!-- 5.0.0 版本不支持 JDK 8 -->
+			<version>4.0.3</version><!-- 5.0.0 ��������������� JDK 8 -->
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- c3p0 数据源连接池 -->
+		<!-- c3p0 ������������������ -->
 		<dependency>
 			<groupId>com.mchange</groupId>
 			<artifactId>c3p0</artifactId>
@@ -134,7 +134,7 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- fastjson json 转换 -->
+		<!-- fastjson json ������ -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
@@ -142,7 +142,7 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- ehcache 缓存 -->
+		<!-- ehcache ������ -->
 		<dependency>
 			<groupId>net.sf.ehcache</groupId>
 			<artifactId>ehcache-core</artifactId>
@@ -150,7 +150,7 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- freemarkder 模板引擎 -->
+		<!-- freemarkder ������������ -->
 		<dependency>
 			<groupId>org.freemarker</groupId>
 			<artifactId>freemarker</artifactId>
@@ -158,15 +158,15 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- log4j 日志 -->
+		<!-- log4j ������ -->
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>1.2.17</version>
+			<version>2.0</version>
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- redis 客户端 -->
+		<!-- redis ��������� -->
 		<dependency>
 			<groupId>redis.clients</groupId>
 			<artifactId>jedis</artifactId>
@@ -176,7 +176,7 @@
 		<dependency>
 			<groupId>de.ruedigermoeller</groupId>
 			<artifactId>fst</artifactId>
-			<version>2.57</version><!-- 注意：更高版本不支持 jdk 8 -->
+			<version>2.57</version><!-- ������������������������������ jdk 8 -->
 			<scope>provided</scope>
 
 			<exclusions>
@@ -196,15 +196,15 @@
 		</dependency>
 		-->
 
-		<!-- jackson json 转换 -->
+		<!-- jackson json ������ -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.11.0</version>
+			<version>2.14.0</version>
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- cron4j 任务调度 -->
+		<!-- cron4j ������������ -->
 		<dependency>
 			<groupId>it.sauronsoftware.cron4j</groupId>
 			<artifactId>cron4j</artifactId>
@@ -212,7 +212,7 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- zxing 二维码生成 -->
+		<!-- zxing ��������������� -->
 		<dependency>
 			<groupId>com.google.zxing</groupId>
 			<artifactId>javase</artifactId>
@@ -220,7 +220,7 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- cglib 扩展 CglibProxyFactory extends ProxyFactory -->
+		<!-- cglib ������ CglibProxyFactory extends ProxyFactory -->
 		<dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib-nodep</artifactId>
@@ -228,11 +228,11 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- 支持在 spring 之中整合使用 jfinal -->
+		<!-- ��������� spring ������������������ jfinal -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>5.3.18</version>
+			<version>6.0.7</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -244,7 +244,7 @@
 			<resource>
 				<directory>src/main/java</directory>
 				<includes>
-					<!-- **/* 前缀用法，可以匹配所有路径 -->
+					<!-- **/* ��������������������������������������� -->
 					<include>**/*.jf</include>
 				</includes>
 				<filtering>false</filtering>
@@ -269,7 +269,7 @@
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>2.10.4</version>
 				<configuration>
-					<!-- 解决 java8  发布到 maven 异常 -->
+					<!-- ������ java8  ��������� maven ������ -->
 					<additionalparam>-Xdoclint:none</additionalparam>
 					<encoding>UTF-8</encoding>
 				</configuration>
@@ -283,7 +283,7 @@
 				</executions>
 			</plugin>
 
-			<!-- 安装源码到本地仓库 -->
+			<!-- ��������������������������� -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
@@ -320,7 +320,7 @@
 				<version>1.6.8</version>
 				<extensions>true</extensions>
 				<configuration>
-					<!-- 对应 maven settings.xml 中的 server 配置 -->
+					<!-- ������ maven settings.xml ������ server ������ -->
 					<serverId>ossrh</serverId>
 					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
 					<autoReleaseAfterClose>true</autoReleaseAfterClose>
